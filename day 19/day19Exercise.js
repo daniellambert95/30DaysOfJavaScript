@@ -54,3 +54,4 @@ function closureOuter(name, age) {
 
 console.log(closureOuter('Daniel', 28).innerName)
 console.log(closureOuter('Daniel', 28).innerAge)
+console.log(closureOuter('Daniel', 28))
