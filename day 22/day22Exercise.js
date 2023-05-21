@@ -42,16 +42,14 @@ function isPrime(number) {
     if (number < 2) {
       return false;
     }
-  
     // Check if the number is divisible by any number from 2 to the square root of the number
     for (let i = 2; i <= Math.sqrt(number); i++) {
       if (number % i === 0) {
         return false;
       }
     }
-  
     // If the number is not divisible by any number from 2 to the square root, it is prime
     return true;
   }
 
-  document.body.appendChild(container);
+document.body.appendChild(container);

@@ -9,12 +9,22 @@
 </head>
 
 <body>
+    <button>Event listener</button>
+    <br>
     <button onclick="alert('Welcome to 30DaysOfJavaScript!')">Click Me</button>
 
-    <div class="oneHundred">
 
-    </div>
-
+    <script>
+        const button = document.querySelector('button')
+        button.addEventListener('keydown', e => {
+            console.log('e gives the event listener object:', e)
+            console.log('e.target gives the selected element: ', e.target)
+            console.log(
+                'e.target.textContent gives content of selected element: ',
+                e.target.textContent
+            )
+        })
+    </script>
     <script>
         console.log("Hello World!")
         console.log('Welcome to 30DaysOfJavaScript')
@@ -22,6 +32,6 @@
 
     <script src="./day 1/introduction.js"></script>
 
-    <script src="./day 22/day22Exercise.js" type="module"></script>
+    <script src="./day 23/day23Exercise.js" type="module"></script>
 
 </html>
